@@ -106,7 +106,7 @@ function htmlDev() {
 }
 
 function styleDev() {
-	return src('#src/style.scss')
+	return src('#src/scss/style.scss')
 		.pipe(autoprefixer({
 			overrideBrowserslist : 'last 5 version',
 			grid: 'no-autoplace'
@@ -178,7 +178,7 @@ function cleanDev() {
 
 function watchDev() {
 	watch(['#src/components/*.html','#src/views/*.html'], htmlDev);
-	watch(['#src/**/*.scss'], styleDev);
+	watch(['#src/scss/**/*.scss'], styleDev);
 	watch(['#src/js/**/*.js', '!#src/js/script.min.js', '!#src/js/vendors/vendors.min.js'], jsDev);
 	watch(['#dev/index.html']).on('change', browserSync.reload);
 }
