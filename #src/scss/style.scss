@@ -1,0 +1,18 @@
+.header {
+	padding: 10px;
+	background-color: green;
+}
+
+figure {
+	width: 300px;
+	height: 200px;
+	aspect-ratio: 3 / 4;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+}
